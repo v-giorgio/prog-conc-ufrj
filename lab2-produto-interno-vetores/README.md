@@ -63,7 +63,7 @@ Soma com threads:          -1001.77776580386671412270516157
 Erro percentual:           0.00000051830128260028448811%
 ```
 
-![Evidências resultado](result.png)
+![Evidências resultado](image.png)
 
 ---
 
