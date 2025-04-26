@@ -43,7 +43,7 @@ gcc -o atividade4 atividade4.c -lm -lpthread
 
 ---
 
-## 📈 Otimizações realizadas
+## 📈 Otimizações realizadas no código
 
 Inicialmente, o programa criava **muito overhead** por:
 - Cada thread pegar apenas **1 número** por vez.
@@ -58,6 +58,18 @@ Inicialmente, o programa criava **muito overhead** por:
   - Cada thread conta seus primos localmente e só atualiza o contador global uma única vez no final.
 
 Essas mudanças tornaram o programa **muito mais eficiente**, aproveitando melhor o paralelismo, que estava ineficiente até para valores N maiores.
+
+---
+
+## 🖥️ Ambiente de execução utilizado
+
+Os testes de desempenho e geração de gráficos foram realizados em um ambiente com as seguintes características de hardware:
+
+- Processador: 12th Gen Intel(R) Core(TM) i5-12450H
+
+  - Núcleos físicos: 6
+  - Threads lógicas: 6 (núcleos físicos) x 2 (threads per core) = 12
+  - Memória RAM: 15 GiB
 
 ---
 
